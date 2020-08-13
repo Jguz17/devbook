@@ -3,10 +3,14 @@ const express = require('express')
 
 const connectDB = require('./config/db')
 
-connectDB()
-
 // assigning function express() from express to app
 const app = express()
+
+// Connect to database
+connectDB()
+
+// Init Middleware
+app.use(express.json({ extended: false }))
 
 // Api call to server, sending some data over
 app.get('/', (req, res) => res.send('API Running'))
