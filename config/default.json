@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://john123:1234@devbook.cqcuo.mongodb.net/devbook?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://john123:1234@devbook.cqcuo.mongodb.net/devbook?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
 }
